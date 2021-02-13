@@ -1,0 +1,4 @@
+data/
+*.mat
+*.xyz
+*.xml
