@@ -42,7 +42,8 @@ def writeXYZ(firstFrame,lastFrame):
                 diffcells = cell[28] #user3
                 attached = cell[27]
                 fusions = cell[31]
-                result = "CA {x} {y} {z} {user2} {user3} {vx} {vy} {user}".format(x=x,y=y,z=z,user2=stemcells,user3=diffcells,vx=attached,vy=fusions,user=radius)
+                #do not change the position of x,y,z and radius
+                result = "CA {x} {y} {z} {user2} {user3} {vx} {vy} {user}".format(x=x,y=y,z=z,user2=stemcells,vx=diffcells,user3=attached,vy=fusions,user=radius)
                 print(result,file=output)
 
 writeXYZ(0,65)
