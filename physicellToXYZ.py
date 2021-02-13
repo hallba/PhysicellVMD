@@ -34,7 +34,7 @@ def writeXYZ(firstFrame,lastFrame):
                 y = cell[2]
                 z = cell[3]
                 #convert from the volume
-                radius = (3*cell[4]/(4*math.pi))**1/3 #user
+                radius = (3*cell[4]/(4*math.pi))**(1/3) #user
                 #why are the volumes in frame 64 mostly 2494? Dead, single cell organoids?
                 #suspect diffcells and stem cells are mixed up- 2494 organoids have 0 diffcells and 1 stemcell
                 #what are 0 volume organoids?
@@ -46,3 +46,4 @@ def writeXYZ(firstFrame,lastFrame):
                 print(result,file=output)
 
 writeXYZ(0,65)
+
