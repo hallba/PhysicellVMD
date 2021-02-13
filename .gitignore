@@ -1,0 +1,6 @@
+data/
+*.mat
+*.xyz
+*.xml
+.DS_store
+visuaisations/
