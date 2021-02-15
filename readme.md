@@ -13,7 +13,7 @@ In the VMD install directory, navigate to topotools1.7 plugin directory, and app
 
 ```bash
 cd plugins/noarch/tcl/topotools1.7/
-cp topotools.tcl topotools.tcl.orig
+cp topovarxyz.tcl topovarxyz.tcl.orig
 patch -R < topovarxyz.tcl.diff
 ```
 
